@@ -11,14 +11,12 @@ const App = () => {
 
   useEffect( () => {
     getShows(); 
-  }, [query]);
+  }, [query]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const getShows = async () => {
     const response = await fetch(`http://api.tvmaze.com/search/shows?q=${query}`);
     const data = await response.json();
-    setShows(data);  
-    console.log(data)
-    }
+    setShows(data);     }
 
   const updateSearch = e => {
     setSearch(e.target.value)
