@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    padding: 15px;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    
+}
+
+p, img {
+    padding: 15px;
+    
+}
+
+.App {
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    color: white
+}
+
+.about {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.search-form {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    width: 50%;
+    border: none;
+    padding: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: darkgray;
+}
+
+.shows {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.show-card {
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+}
+
+.episodes-button {
+    padding: 10px;
+    
+}
+
+.episodes-list {
+    text-align: center;
+    padding: 20px
+}
