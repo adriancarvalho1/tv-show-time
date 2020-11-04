@@ -22,12 +22,11 @@ const Episodes = ({showId}) => {
   )
 
   useEffect(() => {
-    fetch(`http://api.tvmaze.com/shows/${showId}/episodes`)
+    fetch(`https://api.tvmaze.com/shows/${showId}/episodes`)
       .then(res => res.json())
       .then(
         (result) => {
           setEpisodes(result);
-          console.log(result)
         },
       )
   }, [showId])

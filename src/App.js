@@ -14,7 +14,7 @@ const App = () => {
   }, [query]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const getShows = async () => {
-    const response = await fetch(`http://api.tvmaze.com/search/shows?q=${query}`);
+    const response = await fetch(`https://api.tvmaze.com/search/shows?q=${query}`);
     const data = await response.json();
     setShows(data);     }
 
